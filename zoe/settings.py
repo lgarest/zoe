@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
+    'main',
     'textblock'
 ]
 
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'zoe.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR + '/core/templates'],
+        'DIRS': [BASE_DIR + '/main/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
