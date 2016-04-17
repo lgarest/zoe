@@ -59,7 +59,9 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;*/
-  padding: 235px 0;
+  /*padding: 235px 0;*/
+  padding-top: 77px;
+  background-color: black;
   /*margin-bottom: 60px;*/
   /*background-attachment: fixed;*/
   /*background-size: 100% 100%;*/
