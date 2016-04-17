@@ -7,37 +7,30 @@
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
             <div class="testimonial-content shadow">
                 <img src="{% static 'img/4-1.jpg' %}" alt="Image">
-                <h2>Column One</h2>
-                <p>Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in tincidunt purus pretium quis. Fusce posuere egestas enim eu viverra.</p>
-                <br>
+
+                <h2>{% block_title 'testimonio1' user textblocks %}</h2>
+                <p>{% block_text 'testimonio1' user textblocks %}</p><br>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
             <div class="testimonial-content shadow">
                 <img src="{% static 'img/4-2.jpg' %}" alt="Image">
-                <h2>Column Two</h2>
-                <p>Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in tincidunt purus pretium quis.</p>
-                <!-- <a href="#" class="content-link">read it</a> -->
-                <br>
-                <p id="redd"></p>
+                <h2>{% block_title 'testimonio2' user textblocks %}</h2>
+                <p>{% block_text 'testimonio2' user textblocks %}</p><br>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
             <div class="testimonial-content shadow">
                 <img src="{% static 'img/4-3.jpg' %}" alt="Image">
-                <h2>Column Three</h2>
-                <p>Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in tincidunt purus pretium quis. Fusce posuere egestas enim eu viverra.</p>
-                <br>
+                <h2>{% block_title 'testimonio3' user textblocks %}</h2>
+                <p>{% block_text 'testimonio3' user textblocks %}</p><br>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
             <div class="testimonial-content shadow">
                 <img src="{% static 'img/4-4.jpg' %}" alt="Image">
-                <h2>Column Four</h2>
-                <p>Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in tincidunt purus pretium quis.</p>
-                <!-- <a href="#" class="content-link">details</a> -->
-                <br>
-                <p id="dets"></p>
+                <h2>{% block_title 'testimonio4' user textblocks %}</h2>
+                <p>{% block_text 'testimonio4' user textblocks %}</p><br>
             </div>
         </div>
     </div>

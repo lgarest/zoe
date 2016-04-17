@@ -144,17 +144,22 @@ z-index: 999;
 .red-btn:hover { background: #C9302C; }
 .feature-content {
     background: #F2F2F2;
-    padding-bottom: 40px;
+    
+    /*padding-bottom: 40px;*/
+}
+.feature-content > ul{
+  padding: 0 20px;
+  padding-left: 40px;
 }
 .feature-content-title {
-    padding: 0 20px;
     text-align: left;    
+    padding: 0 20px;
 }
 .feature-content-description {
-    padding: 0 20px 35px;
     text-align: left;
     color: #333333;
     margin-top: 15px;
+    padding: 0 20px;
 }
 .feature-content-link {
     border-radius: 5px;
@@ -170,6 +175,7 @@ z-index: 999;
   color: white;
   text-decoration: none;
 }
+
 
 /* End Feature CSS */
 
