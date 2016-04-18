@@ -48,6 +48,14 @@ h6,
   background-color: rgba(0,0,0,0.5);
   cursor: pointer;
 }
+.image-container{
+  height: 180px !important;
+  overflow-y: hidden !important;
+}
+.l-image-container{
+  height: 240px !important;
+  overflow-y: hidden !important;
+}
 .cool-font{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
