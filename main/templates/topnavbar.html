@@ -1,4 +1,6 @@
-<nav class="navbar navbar-fixed-top" style="background-color: white; box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;">
+{% load staticfiles %}
+{% load textblock %}
+<nav class="navbar navbar-fixed-top shadow" style="background-color: white;">
     <div class="container pull-right">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle">
@@ -9,10 +11,11 @@
         </div>   
         <div class="single-page-nav sticky-wrapper pull-right" id="tmNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="#homeSection">Home</a></li>
-                <li><a href="#aboutZoe">About Zoe</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#contactSection">Contact</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'zoehub' %}">Zoe HUB</a></li>
+                <li><a href="{% url 'zoeai' %}">Zoe AI</a></li>
+                <li><a href="{% url 'uses' %}">Uses</a></li>
+                <li><a href="{% url 'buy' %}">Buy</a></li>
             </ul>
         </div>   
     </div>
