@@ -640,6 +640,9 @@ a[data-lightbox]:hover img{
 .mb-200{
     margin-bottom: 200px;
 }
+.pt-50{
+    padding-top: 50px;
+}
 .pb-50{
     padding-bottom: 50px;
 }
@@ -665,4 +668,16 @@ div.vertical-middle > span {
 }
 .shadow{
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+div.panel-heading.custom{
+    padding: 0;
+}
+div.panel-heading.custom > div{
+    height: 300px;
+}
+
+div.panel-heading.custom h2{
+    padding:10px 15px;
+    
 }
