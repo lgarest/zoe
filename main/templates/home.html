@@ -14,11 +14,13 @@ Smart Independence
             <div class="col-sm-12">
                 <div id="carousel-home" class="carousel slide no-shadows" data-ride="carousel" style="height: 657px;">
                     <ol class="carousel-indicators">
-                        <li data-target="#carousel-home" data-slide-to="0" style="border: 1px solid black;">
+                        <li data-target="#carousel-home" data-slide-to="0" class="active" style="border: 1px solid black;">
                         </li>
                         <li data-target="#carousel-home" data-slide-to="1" style="border: 1px solid black;">
                         </li>
-                        <li data-target="#carousel-home" data-slide-to="2" class="active" style="border: 1px solid black;">
+                        <li data-target="#carousel-home" data-slide-to="2"  style="border: 1px solid black;">
+                        </li>
+                        <li data-target="#carousel-home" data-slide-to="3"  style="border: 1px solid black;">
                         </li>
                     </ol>
                     <div class="carousel-inner">
@@ -29,18 +31,29 @@ Smart Independence
                         </div>
                         <div class="item">
                             <a href="#zoehubvideocontent">
-                                
-                            <img src="{% static 'img/ZOE-Cover-2.png' %}" />
+                                <img src="{% static 'img/ZOE-Cover-2.png' %}" />
                             </a>
                             <div class="carousel-caption">
                             </div>
                         </div>
                             
                         <div class="item">
-                            <img src="http://placehold.it/1168x657" />
+                            <a href="{% url 'zoehub' %}">
+                                <img src="{% static 'img/ZOEHUB1.png' %}" />
+                            </a>
                             <div class="carousel-caption">
                             </div>
                         </div>
+
+                        <div class="item">
+                            <a href="{% url 'zoeai' %}">
+                                <img src="{% static 'img/ZOEAICover.png' %}" />
+                            </a>
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+
+                        
                     </div><a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev"><span class="fa fa-chevron-left c-black"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-home" role="button" data-slide="next"><span class="fa fa-chevron-right c-black"></span><span class="sr-only">Next</span></a>
                 </div>
             </div>
@@ -53,7 +66,7 @@ Smart Independence
     <div class="container">
         <div class="row pb-50">
             <div class="col-sm-12">
-                <h3 class="mg-md text-center">
+                <h3 class="mg-md text-center f-big">
                     ZOE
                 </h3>
                 <p class="text-center">
@@ -85,7 +98,7 @@ Smart Independence
     <div class="container">
         <div class="row pb-50">
             <div class="col-sm-12">
-                <h3 class="mg-md text-center">
+                <h3 class="mg-md text-center f-big">
                     The solution is ZOE
                 </h3>
                 <p class="text-center">
@@ -117,12 +130,9 @@ Smart Independence
     <div class="container">
     <div class="row pb-50">
         <div class="col-sm-12">
-            <h3 class="mg-md text-center">
+            <h3 class="mg-md text-center f-big">
                 Get started
             </h3>
-            <p class="text-center">
-                Two prices, infinite possibilities
-            </p>
         </div>
     </div>
         <div class="row">
@@ -139,35 +149,33 @@ Smart Independence
                             <ul class="list-unstyled list-sp-md">
                                 <li>
                                     <h4 class="text-center mg-md">
-                                        Includes one HUB
+                                        Connecting all your smart devices<br>from one central place
+                                    </h4>
+                                </li>
+                                
+                                <li>
+                                    <h4 class="text-center mg-md">
+                                        Only $59.99 
+                                        <em class="small"> (Includes 3 months <br> subscription of ZOE AI*) </em>
+                                        
                                     </h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-center mg-md">
-                                        Use it as a IoT aggregator
-                                    </h4>
-                                </li>
-                                <li>
-                                    <h4 class="text-center mg-md">
-                                        Includes 3 months of ZOE AI
-                                    </h4>
-                                </li>
-                                <li>
-                                    <h4 class="text-center mg-md">
-                                        For only $59,99
+                                    <h4 class="text-center mg-md small">
+                                    <em> *Only for new accounts </em>
                                     </h4>
                                 </li>
                             </ul>
                         </div>
                         <div class="panel-footer">
-                            <a href="{% url 'zoehub' %}" class="btn btn-d btn-lg btn-sq btn-block">More info</a>
+                            <a href="{% url 'zoehub' %}" class="btn btn-d btn-lg btn-sq btn-block">Learn more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="panel">
                         <div class="panel-heading custom">
-                            <img src="http://placehold.it/1920x1080" class="img-responsive" />
+                            <img src="{% static 'img/ZOE-Get-Started-AI.png' %}" class="img-responsive" />
                             <h2 class="mg-clear text-center">
                                 ZOE AI
                             </h2>
@@ -176,28 +184,25 @@ Smart Independence
                             <ul class="list-unstyled list-sp-md">
                                 <li>
                                     <h4 class="text-center mg-md">
-                                        Includes our pattented ZOE AI
+                                        Proactive learning home assistant<br>&nbsp;
                                     </h4>
                                 </li>
                                 <li>
                                     <h4 class="text-center mg-md">
-                                        Learns and adapt to you
+                                        Only $9.99/month *<br>&nbsp;
                                     </h4>
                                 </li>
                                 <li>
-                                    <h4 class="text-center mg-md">
-                                        Awesome feature three
-                                    </h4>
-                                </li>
-                                <li>
-                                    <h4 class="text-center mg-md">
-                                        For only $9,99/month
+                                    <h4 class="text-center mg-md small">
+                                    <em>
+                                        * At least one ZOE HUB is required
+                                    </em>
                                     </h4>
                                 </li>
                             </ul>
                         </div>
                         <div class="panel-footer">
-                            <a href="{% url 'zoeai' %}" class="btn btn-d btn-lg btn-sq btn-block">More info</a>
+                            <a href="{% url 'zoeai' %}" class="btn btn-d btn-lg btn-sq btn-block">Learn more</a>
                         </div>
                     </div>
                 </div>

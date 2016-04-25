@@ -1,5 +1,5 @@
 from django.views.generic import CreateView, TemplateView
-from .models import Contact
+from .models import Contact, Order
 from textblock.models import TextBlock
 
 class IndexView(CreateView):
@@ -54,3 +54,9 @@ class UsesView(TemplateView):
             textblocks[block.slug] = block
         context['textblocks'] = textblocks
         return context
+
+class BuyView(CreateView):
+    model = Order
+    fields = ['firstname', 'lastname', 'email', 'city', 'postcode', 'country', 'address', 'hubs', 'ai', 'cardnumber', 'securitynumber']
+    template_name = 'buy.html'
+    success_url = '/'
