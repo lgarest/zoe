@@ -25,6 +25,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	font-weight:300;
 }
 
+p{ font-size: 16px;}
 
 /* Site container width */
 
@@ -686,7 +687,7 @@ div.panel-heading.custom h2{
 }
 
 .f-big, .f-40{
-    font-size: 40px;
+    font-size: 60px;
 }
 .f-25{
     font-size: 25px;
