@@ -681,9 +681,15 @@ div.panel-heading.custom h2{
     padding:10px 15px;
     
 }
+.f-60{
+    font-size: 60px;
+}
 
-.f-big{
+.f-big, .f-40{
     font-size: 40px;
+}
+.f-25{
+    font-size: 25px;
 }
 form.orderform input{
     width:100%;
