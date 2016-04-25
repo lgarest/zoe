@@ -688,3 +688,6 @@ div.panel-heading.custom h2{
 form.orderform input{
     width:100%;
 }
+.btn.btn-d.btn-lg.btn-sq.btn-block:hover{
+    background-color: #072733;
+}
