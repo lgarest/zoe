@@ -2,4 +2,5 @@
 *.pyo
 .DS_Store
 venv
-static
+/static/
+*db.sqlite3
