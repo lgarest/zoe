@@ -2,12 +2,8 @@ from django.views.generic import CreateView, TemplateView
 from .models import Contact, Order
 from textblock.models import TextBlock
 
-class IndexView(CreateView):
-    model = Contact
-    fields = ['name', 'email', 'subject', 'message']
+class IndexView(TemplateView):
     template_name = 'home.html'
-    success_url = '/'
-
 
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
@@ -59,4 +55,11 @@ class BuyView(CreateView):
     model = Order
     fields = ['firstname', 'lastname', 'email', 'city', 'postcode', 'country', 'address', 'hubs', 'ai', 'cardnumber', 'securitynumber']
     template_name = 'buy.html'
+    success_url = '/'
+
+
+class ContactView(CreateView):
+    model = Contact
+    fields = ['name', 'email', 'subject', 'message']
+    template_name = 'contact.html'
     success_url = '/'
